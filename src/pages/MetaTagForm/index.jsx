@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import Modal from "../../components/Modal";
 import Nav from "../../components/Nav";
 import "./index.css";
+import ReactConfetti from "../../components/Confetti";
 
 function getMetaTagsStr(title, description, keywords, author) {
   return [
@@ -80,12 +82,17 @@ const MetaTagForm = () => {
           <button>Submit</button>
         </form>
 
-        {metaTags && (
-          <code>
-            {metaTags.map((metaTag) => (
-              <p>{metaTag}</p>
-            ))}
-          </code>
+        {metaTags.length > 0 && (
+          <div>
+            <Modal>
+              <code>
+                {metaTags.map((metaTag) => (
+                  <p>{metaTag}</p>
+                ))}
+              </code>
+            </Modal>
+            <ReactConfetti/>
+          </div>
         )}
       </div>
     </>
