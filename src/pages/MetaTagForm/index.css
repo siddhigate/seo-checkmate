@@ -1,0 +1,26 @@
+.meta-tag-form {
+    max-width: 650px;
+    margin: auto;
+}
+
+.meta-tag-form h1 {
+    margin: 2rem 0 4rem 0;
+    text-align: center;
+}
+
+.meta-tag-form form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meta-tag-form label {
+    display: block;
+}
+
+.meta-tag-form input, .meta-tag-form textarea {
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+}
