@@ -1,0 +1,16 @@
+.home-link-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.home-link {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
