@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import Modal from "../../components/Modal";
 import Nav from "../../components/Nav";
 import "./index.css";
+import ReactConfetti from "../../components/Confetti";
 
 function getOgTags({
   title,
@@ -36,9 +38,7 @@ const OgTagForm = () => {
   function submitHandler(e) {
     e.preventDefault();
     console.log(formInputs);
-    setMetaTags(
-      getOgTags(formInputs)
-    );
+    setMetaTags(getOgTags(formInputs));
   }
 
   function setFormVal(key, value) {
@@ -95,12 +95,17 @@ const OgTagForm = () => {
           <button>Submit</button>
         </form>
 
-        {metaTags && (
-          <code>
-            {metaTags.map((metaTag) => (
-              <p>{metaTag}</p>
-            ))}
-          </code>
+        {metaTags.length > 0 && (
+          <div>
+            <Modal>
+              <code>
+                {metaTags.map((metaTag) => (
+                  <p>{metaTag}</p>
+                ))}
+              </code>
+            </Modal>
+            <ReactConfetti />
+          </div>
         )}
       </div>
     </>
