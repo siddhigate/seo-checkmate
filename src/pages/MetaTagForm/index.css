@@ -1,11 +1,37 @@
 .meta-tag-form {
-    max-width: 650px;
-    margin: auto;
+    /* max-width: 650px; */
+    margin: 0 auto 5rem auto;
 }
 
 .meta-tag-form h1 {
-    margin: 2rem 0 4rem 0;
+    margin: 2rem 0 1.5rem 0;
     text-align: center;
+}
+
+.meta-tag-form .underline {
+    width: 80px;
+    border-bottom: 5px solid #7c3aed;
+    text-align: center;
+    margin: 1rem auto 2.5rem auto;
+    border-radius: 5px;
+}
+
+.meta-tag-form label {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.meta-tag-form .sub-heading-underline {
+    width: 60px;
+    border-bottom: 4px solid limegreen;
+    text-align: center;
+    margin: 0.5rem 0 0rem 0;
+    border-radius: 5px;
+}
+
+.meta-tag-form .tip {
+    color: gray;
+    margin: 0.5rem 0;
 }
 
 .meta-tag-form form {
@@ -23,4 +49,13 @@
 .meta-tag-form input, .meta-tag-form textarea {
     width: 100%;
     padding: 0.5rem 0.25rem;
+}
+
+.meta-tag-form button {
+    background-color: #7c3aed;
+    align-self: center;
+    border: 1px solid #7c3aed;
+    color: white;
+    border-radius: 3px;
+    padding: 0.5rem 4rem;
 }
