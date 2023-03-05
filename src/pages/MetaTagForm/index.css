@@ -35,7 +35,7 @@
 }
 
 .meta-tag-form form {
-    max-width: 450px;
+    max-width: 550px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -57,5 +57,6 @@
     border: 1px solid #7c3aed;
     color: white;
     border-radius: 3px;
-    padding: 0.5rem 4rem;
+    padding: 0.75rem 4rem;
+    width: 50%;
 }
