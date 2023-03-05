@@ -52,10 +52,13 @@ const OgTagForm = () => {
       <Nav></Nav>
       <div className="meta-tag-form">
         <h1>Generate OG tags for your website!</h1>
+        <div className="underline"></div>
 
         <form onSubmit={submitHandler}>
           <div>
             <label htmlFor="title">Title</label>
+            <div className="sub-heading-underline"></div>
+            <p className="tip">Include a descriptive, keyword-rich title for your page. Keep the title under 60 characters to avoid truncation.</p>
             <input
               id="title"
               value={formInputs.title}
@@ -64,6 +67,8 @@ const OgTagForm = () => {
           </div>
           <div>
             <label htmlFor="description">Description</label>
+            <div className="sub-heading-underline"></div>
+            <p className="tip">Write a concise, informative description that accurately summarizes the content of the page. Keep the description under 155 characters to avoid truncation.</p>
             <textarea
               id="description"
               value={formInputs.description}
@@ -71,7 +76,20 @@ const OgTagForm = () => {
             ></textarea>
           </div>
           <div>
+            <label htmlFor="image">Image</label>
+            <div className="sub-heading-underline"></div>
+            <p className="tip">Use a high-quality, visually appealing image with a minimum size of 1200 x 630 pixels for best results.</p>
+
+            <input
+              id="image"
+              value={formInputs.imageUrl}
+              onChange={(e) => setFormVal("imageUrl", e.target.value)}
+            ></input>
+          </div>
+          <div>
             <label htmlFor="type">Type</label>
+            <div className="sub-heading-underline"></div>
+            <p className="tip">Select the appropriate type of content for the page, such as article, product, or website.</p>
             <input
               id="type"
               value={formInputs.type}
@@ -80,6 +98,8 @@ const OgTagForm = () => {
           </div>
           <div>
             <label htmlFor="url">URL</label>
+            <div className="sub-heading-underline"></div>
+            <p className="tip">Include the URL of the page on which the tags are present. Ensure that the URL is canonical.</p>
             <textarea
               id="url"
               value={formInputs.url}
@@ -88,6 +108,8 @@ const OgTagForm = () => {
           </div>
           <div>
             <label htmlFor="sitename">Site name</label>
+            <div className="sub-heading-underline"></div>
+            <p className="tip">Include the name of your website or brand</p>
             <input
               id="sitename"
               value={formInputs.siteName}
