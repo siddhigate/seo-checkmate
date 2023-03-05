@@ -130,6 +130,15 @@ const OgTagForm = () => {
                   <p>{metaTag}</p>
                 ))}
               </code>
+              <button
+                className="copy-btn"
+                onClick={() =>
+                  navigator.clipboard.writeText(metaTags.join("\n"))
+                }
+              >
+                <span style={{marginRight: "0.5rem"}}>Copy</span>
+                <i className="fa-regular fa-clipboard"></i>
+              </button>
             </Modal>
             <ReactConfetti />
           </div>

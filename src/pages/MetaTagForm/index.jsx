@@ -53,7 +53,10 @@ const MetaTagForm = () => {
           <div>
             <label htmlFor="title">Title</label>
             <div className="sub-heading-underline"></div>
-            <p className="tip">Include your primary keyword in the title tag. Keep the title tag under 60 characters</p>
+            <p className="tip">
+              Include your primary keyword in the title tag. Keep the title tag
+              under 60 characters
+            </p>
             <input
               id="title"
               value={formInputs.title}
@@ -63,7 +66,10 @@ const MetaTagForm = () => {
           <div>
             <label htmlFor="description">Description</label>
             <div className="sub-heading-underline"></div>
-            <p className="tip">Include your primary keyword in the meta description. Keep the meta description under 155 characters</p>
+            <p className="tip">
+              Include your primary keyword in the meta description. Keep the
+              meta description under 155 characters
+            </p>
             <textarea
               id="description"
               value={formInputs.description}
@@ -73,7 +79,10 @@ const MetaTagForm = () => {
           <div>
             <label htmlFor="keywords">Keywords</label>
             <div className="sub-heading-underline"></div>
-            <p className="tip">Use keywords that are semantically related to the content of the page.</p>
+            <p className="tip">
+              Use keywords that are semantically related to the content of the
+              page.
+            </p>
             <textarea
               id="keywords"
               value={formInputs.keywords}
@@ -83,7 +92,10 @@ const MetaTagForm = () => {
           <div>
             <label htmlFor="author">Author</label>
             <div className="sub-heading-underline"></div>
-            <p className="tip">The meta author tag is an HTML tag used to specify the author of a web page.</p>
+            <p className="tip">
+              The meta author tag is an HTML tag used to specify the author of a
+              web page.
+            </p>
 
             <input
               id="author"
@@ -96,15 +108,21 @@ const MetaTagForm = () => {
 
         {metaTags.length > 0 && showModal && (
           <div>
-            <Modal
-              title={"Meta tags"}
-              closeModal={() => setShowModal(false)}
-            >
+            <Modal title={"Meta tags"} closeModal={() => setShowModal(false)}>
               <code>
                 {metaTags.map((metaTag) => (
                   <p>{metaTag}</p>
                 ))}
               </code>
+              <button
+                className="copy-btn"
+                onClick={() =>
+                  navigator.clipboard.writeText(metaTags.join("\n"))
+                }
+              >
+                <span style={{marginRight: "0.5rem"}}>Copy</span>
+                <i className="fa-regular fa-clipboard"></i>
+              </button>
             </Modal>
             <ReactConfetti />
           </div>

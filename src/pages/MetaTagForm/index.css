@@ -46,6 +46,14 @@
     display: block;
 }
 
+.copy-btn {
+    background-color: #7c3aed;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #7c3aed;
+    padding: 0.25rem 2rem 0.35rem 2rem;
+}
+
 .meta-tag-form input, .meta-tag-form textarea {
     width: 100%;
     padding: 0.5rem 0.25rem;
