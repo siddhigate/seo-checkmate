@@ -4,8 +4,26 @@
 }
 
 .main-container h1 {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 0rem 0;
+    text-align: center;
 }
+
+.main-container .underline {
+    width: 80px;
+    border-bottom: 5px solid #7c3aed;
+    text-align: center;
+    margin: 1rem auto 2rem auto;
+    border-radius: 5px;
+}
+
+.main-container .sub-heading-underline {
+    width: 60px;
+    border-bottom: 5px solid limegreen;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
 
 .list-element {
     margin-bottom: 2rem;
@@ -21,5 +39,8 @@
     padding: 1rem 1.5rem;
     margin: 1rem 0;
     border-radius: 4px;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.05);
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0, 0.07);
+    display: flex;
+    gap: 1rem;
 }
