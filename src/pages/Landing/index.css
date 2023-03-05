@@ -3,6 +3,244 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
-    gap: 1rem;
+    height: 70vh;
+    gap: 1.5rem;
+}
+
+.landing-container .logo {
+    width: 6rem;
+}
+
+.landing-container h1 {
+    font-size: 4rem;
+}
+
+.landing-container p {
+    font-size: 1.4rem;
+}
+
+.landing-container a {
+    font-size: 1.25rem;
+    background-color: #7c3aed;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.landing .bg-logo {
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+.landing svg {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.landing .bg-logo.css {
+    top: 10%;
+    left: 15%;
+    animation: vertical-shaking 5s infinite;
+}
+
+.landing .bg-logo.nodejs {
+    top: 28%;
+    right: 5%;
+}
+
+.landing .bg-logo.db {
+    top: 40%;
+    left: 20%;
+    animation: vertical-shaking 5s infinite;
+}
+
+.landing .bg-logo.ts {
+    top: 40%;
+    right: 20%;
+    animation: vertical-shaking 3s infinite;
+}
+
+.landing .bg-logo.mongodb {
+    top: 5%;
+    left: 28%;
+    animation: horizontal-shaking 3s infinite;
+}
+
+.landing .bg-logo.html {
+    top: 10%;
+    right: 15%;
+    animation: horizontal-shaking 3s infinite;
+}
+
+.landing .bg-logo.react {
+    top: 50%;
+    right: 5%;
+}
+
+.landing .bg-logo.redux {
+    bottom: 50%;
+    left: 5%;
+}
+
+.landing .bg-logo.git {
+    top: 5%;
+    right: 30%;
+}
+
+.landing .bg-logo.js {
+    top: 25%;
+    left: 5%;
+}
+
+
+@keyframes vertical-shaking {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(5px)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    75% {
+        transform: translateY(5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes tilt-n-move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(5px)
+    }
+
+    50% {
+        transform: translateX(-5px)
+    }
+
+    75% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+@keyframes skew-x-shake {
+    0% {
+        transform: skewX(-15deg);
+    }
+
+    5% {
+        transform: skewX(15deg);
+    }
+
+    10% {
+        transform: skewX(-15deg);
+    }
+
+    15% {
+        transform: skewX(15deg);
+    }
+
+    20% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+@keyframes skew-y-shake {
+    0% {
+        transform: skewY(-15deg);
+    }
+
+    5% {
+        transform: skewY(15deg);
+    }
+
+    10% {
+        transform: skewY(-15deg);
+    }
+
+    15% {
+        transform: skewY(15deg);
+    }
+
+    20% {
+        transform: skewY(0deg);
+    }
+
+    100% {
+        transform: skewY(0deg);
+    }
 }
