@@ -9,3 +9,14 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.nav .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: 1rem;
+}
+
+.nav .logo {
+    width: 2rem;
+}

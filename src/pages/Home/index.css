@@ -11,6 +11,40 @@
     border: 1px solid lightgray;
     border-radius: 5px;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
     margin: 1rem;
+}
+
+.home-link:hover {
+    transform: scale(1.1);
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.home-link h2 {
+    margin-bottom: 1rem;
+}
+
+.home-link:nth-child(1) {
+    border-bottom: 5px solid limegreen;
+}
+
+.home-link:nth-child(2) {
+    border-bottom: 5px solid #7c3aed;
+}
+
+.home-link:nth-child(3) {
+    border-bottom: 5px solid #eab308;
+}
+
+.home-link:nth-child(4) {
+    border-bottom: 5px solid #e11d48;
+}
+
+.home-link:nth-child(5) {
+    border-bottom: 5px solid #3b82f6;
+}
+
+.home-link:nth-child(6) {
+    border-bottom: 5px solid #ea580c;
 }
