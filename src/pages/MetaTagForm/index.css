@@ -2,6 +2,9 @@
     /* max-width: 650px; */
     margin: 0 auto 5rem auto;
 }
+.meta-tag-form-container {
+    margin: 0 1.5rem;
+}
 
 .meta-tag-form h1 {
     margin: 2rem 0 1.5rem 0;
@@ -52,6 +55,11 @@
     border-radius: 3px;
     border: 1px solid #7c3aed;
     padding: 0.25rem 2rem 0.35rem 2rem;
+}
+
+.copy-btn:hover {
+    cursor: pointer;
+    background: #6d28d9;
 }
 
 .meta-tag-form input, .meta-tag-form textarea {
