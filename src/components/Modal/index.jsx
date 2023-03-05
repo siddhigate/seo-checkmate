@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-export default function index({ closeModal, children, maxWidth = "450px" }) {
+export default function index({ title, closeModal, children, maxWidth = "450px" }) {
   return ReactDOM.createPortal(
     <div className="modal-background" aria-hidden="true">
       <div className="modal" style={{ maxWidth }}>
@@ -15,6 +15,7 @@ export default function index({ closeModal, children, maxWidth = "450px" }) {
             <i className="fas fa-times txt-red" id="modal-dismiss-btn" />
           </button>
 
+          <h2>{title}</h2>
           <div className="txt-dark-gray lh-md modal-children">{children}</div>
         </div>
       </div>

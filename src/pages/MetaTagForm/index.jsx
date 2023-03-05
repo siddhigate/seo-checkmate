@@ -22,6 +22,7 @@ const MetaTagForm = () => {
     author: "",
   });
   const [metaTags, setMetaTags] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   function submitHandler(e) {
     e.preventDefault();
@@ -34,6 +35,7 @@ const MetaTagForm = () => {
         formInputs.author
       )
     );
+    setShowModal(true);
   }
 
   function setFormVal(key, value) {
@@ -82,16 +84,19 @@ const MetaTagForm = () => {
           <button>Submit</button>
         </form>
 
-        {metaTags.length > 0 && (
+        {metaTags.length > 0 && showModal && (
           <div>
-            <Modal>
+            <Modal
+              title={"Meta tags"}
+              closeModal={() => setShowModal(false)}
+            >
               <code>
                 {metaTags.map((metaTag) => (
                   <p>{metaTag}</p>
                 ))}
               </code>
             </Modal>
-            <ReactConfetti/>
+            <ReactConfetti />
           </div>
         )}
       </div>

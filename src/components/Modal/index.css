@@ -15,10 +15,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2em;
-    background-color: var(--clr-dark);
+    background-color: white;
+    border-radius: 5px;
     box-shadow: var(--bs-gray-dark);
     z-index: 9999;
-    text-align: center;
 }
 
 .modal-content, .modal-children {
@@ -49,10 +49,6 @@
     display: block;
 }
 
-.modal {
-    text-align: center;
-}
-
 .flex {
     display: flex;
 }
@@ -69,7 +65,6 @@
 .modal h2 {
     text-align: center;
     font-size: 1.75rem;
-    margin-top: 2rem;
 }
 
 .modal .info-label {
@@ -135,4 +130,12 @@
     font-size: 0.9rem;
     border-radius: 5px;
     background: rgb(21, 152, 239);
+}
+
+.modal code {
+    background-color: #f6eed9;
+    border: 1px solid #f6eed9;
+    padding: 1rem;
+    max-height: 180px;
+    overflow-y: scroll;
 }

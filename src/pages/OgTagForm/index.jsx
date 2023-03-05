@@ -34,11 +34,13 @@ const OgTagForm = () => {
     locale: "",
   });
   const [metaTags, setMetaTags] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   function submitHandler(e) {
     e.preventDefault();
     console.log(formInputs);
     setMetaTags(getOgTags(formInputs));
+    setShowModal(true);
   }
 
   function setFormVal(key, value) {
@@ -95,9 +97,12 @@ const OgTagForm = () => {
           <button>Submit</button>
         </form>
 
-        {metaTags.length > 0 && (
+        {metaTags.length > 0 && showModal && (
           <div>
-            <Modal>
+            <Modal
+              title="OG tags"
+              closeModal={() => setShowModal(false)}
+            >
               <code>
                 {metaTags.map((metaTag) => (
                   <p>{metaTag}</p>
